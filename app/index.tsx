@@ -1,11 +1,20 @@
-import { View, Text } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
 
-function IndexPage() {
+const IndexPage = () => {
   return (
-    <View>
-      <Text>Beranda</Text>
+    <View style={styles.container}>
+      <Text>IndexPage</Text>
     </View>
   );
-}
+};
 
 export default IndexPage;
+
+const styles = StyleSheet.create({
+  container: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
